@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <!-- 外部样式表  根据文件关系的资源定位查找 -->
+    <link rel="stylesheet" href="./CSS/base.css">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <!-- 引入字体图标 -->
+    <link rel="stylesheet" href="./font_2632606_yywtv9y8ob/iconfont.css">
+    <!-- 引入字体图标js -->
+    <script src="./font_2632606_yywtv9y8ob/iconfont.js"></script>
+    <!-- 引入轮播图插件 -->
+    <link rel="stylesheet" href="./libs/swiper.min.css">
+    <!-- Swiper JS -->
+    <script src="./libs/swiper.min.js"></script>
+    <!-- 引入动画库css -->
+    <link rel="stylesheet" href="./libs/animate.min.css">
+
+</head>
+
+<body>
+    <!-- 顶部--logo导航 -->
+    <div class="header_logo">
+       少年的青春之问
+    </div>
+    <!-- 顶部---选项导航 -->
+    <div class="header_nav">
+        <ul>
+            <li class="one wow slideInLeft" data-wow-delay="0.1s">
+                <a href="./index.html">首页</a>
+            </li>
+            <li class="one wow slideInLeft" data-wow-delay="0.2s">
+                <a href="./list.html">前端</a>
+            </li>
+            <li class="one wow slideInLeft" data-wow-delay="0.3s">
+                <a href="./index.html">后端</a>
+            </li>
+            <li class="one wow slideInLeft" data-wow-delay="0.4s">
+                <a href="./index.html">UI设计</a>
+            </li>
+            <li class="one wow slideInRight" data-wow-delay="0.4s">
+                <a href="./index.html">教学笔录</a>
+            </li>
+            <li class="one wow slideInRight" data-wow-delay="0.3s">
+                <a href="./index.html">项目展示</a>
+            </li>
+            <li class="one wow slideInRight" data-wow-delay="0.2s">
+                <a href="./index.html">关于作者</a>
+            </li>
+            <li class="one wow slideInRight" data-wow-delay="0.1s">
+                <a href="./index.html">留言板</a>
+            </li>
+        </ul>
+    </div>
+    <!-- 网站通告栏 -->
+    <div class="notice">
+        <!-- 图标 -->
+        <p class="iconfont icon-laba"></p>
+        <!-- 通告内容 -->
+        <div class="notice_content">本站为个人原创请各位友友尽情提建议啊</div>
+    </div>
+    <!-- banner+个人信息 -->
+    <div class="banner_user">
+        <!-- 左侧banner   命名时可以添加修饰词 例如warapper容器 banner_wrapper指盛放轮播图的区域容器-->
+        <div class="banner_wrapper">
+            <!-- Swiper -->
+            <div class="swiper-container banner_box">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="https://img0.baidu.com/it/u=1485671802,4160238259&fm=26&fmt=auto&gp=0.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://img0.baidu.com/it/u=1679039886,2803490092&fm=26&fmt=auto&gp=0.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://img1.baidu.com/it/u=1222236741,1563494518&fm=26&fmt=auto&gp=0.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://img2.baidu.com/it/u=3949812912,2739598128&fm=26&fmt=auto&gp=0.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://img2.baidu.com/it/u=1355033833,3478181435&fm=26&fmt=auto&gp=0.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://img2.baidu.com/it/u=1975513084,4181368220&fm=26&fmt=auto&gp=0.jpg" alt="">
+                    </div>
+                </div>
+                <!-- 上下按钮 -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <!-- 焦点分页器 -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <!-- 右侧个人信息 -->
+        <div class="user_wrapper">
+            <!-- 上个人信息 -->
+            <div class="user_info_list">
+                <!-- 头像 -->
+                <img src="https://img0.baidu.com/it/u=2007860528,3967414055&fm=26&fmt=auto&gp=0.jpg" alt="">
+                <!-- 个人信息 -->
+                <ul>
+                    <li>
+                        <h3>院校</h3>
+                        <p>黄淮学院</p>
+                    </li>
+                    <li>
+                        <h3>职业</h3>
+                        <p>前端开发工程师</p>
+                    </li>
+                    <li>
+                        <h3>兴趣爱好</h3>
+                        <p>摄影爱好者</p>
+                    </li>
+                </ul>
+            </div>
+            <!-- 下相关链接 -->
+            <div class="about_link">
+                <div class="about_title">相关链接</div>
+                <div class="about_link_list">
+                    <ul>
+                        <li class="one wow bounceInUp" data-wow-delay="0.1s">
+                            <div id="xinlang" class="iconfont icon-xinlangweibo"></div>
+                            <p>新浪微博</p>
+                        </li>
+                        <li class="one wow bounceInUp" data-wow-delay="0.1s">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-QQ"></use>
+                            </svg>
+                            <p>QQ在线</p>
+                        </li>
+                        <li class="one wow bounceInUp" data-wow-delay="0.1s">
+                            <div id="weixin" class="iconfont icon-weixin"></div>
+                            <p>站长微信</p>
+                        </li>
+                        <li class="one wow bounceInUp" data-wow-delay="0.1s">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-shoucang1"></use>
+                            </svg>
+                            <p>收藏本站</p>
+                        </li>
+                    </ul>
+                    <!-- 蒙版遮罩 -->
+                    <div class="mask_wrapper">
+                        <!-- 具体内容 -->
+                        <div class="mask_info_box">
+                            <h3>站长微信</h3>
+                            <button id="btn"> ✘</button>
+                            <img src="https://img1.baidu.com/it/u=4288491788,626998347&fm=26&fmt=auto&gp=0.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 页面主题内容 -->
+    <div class="main_wrapper">
+        <!-- 左侧博客列表 -->
+        <div class="left_blog_list">
+            <!-- 博客列表标题 -->
+            <div class="blog_list_title">
+                <i class="iconfont icon-ai-list"></i>
+                <span>最新博客列表</span>
+                <span>New Article List</span>
+            </div>
+            <!-- 具体博客列表 -->
+            <div class="blog_list_item">
+                <ul>
+                    <li class="one wow bounceInLeft" data-wow-delay="0.1s">
+                        <!-- 左侧图片区域 -->
+                        <div class="blog_img">
+                            <img src="https://img1.baidu.com/it/u=1953131264,2742788103&fm=26&fmt=auto&gp=0.jpg" alt="">
+                        </div>
+                        <!-- 右侧内容 -->
+                        <div class="blog_content">
+                            <h2>高考加油</h2>
+                            <p>欢迎各位有志同学报考黄淮学院,黄淮学院创办于2004年，位于河南省驻马店市开源大道，现设有经济与管理、文化传媒、数学与统计、建筑工程等17个二级学院和50个本科专业，涵盖理、工、管理、经济、教育、艺术。
+                                <i class="iconfont icon-iconfontzhizuobiaozhun47"></i>
+                                <a href="https://baike.baidu.com/item/%E9%BB%84%E6%B7%AE%E5%AD%A6%E9%99%A2/540817?fr=aladdin">阅读全文</a>
+                            </p>
+                        </div>
+                        <!-- 底部右下角细节描述 -->
+                        <div class="blog_about">
+                            <i class="iconfont icon-zhongbiao"></i>2021-6-27
+                            <i class="iconfont icon-yanjing-"></i>88888
+                            <i class="iconfont  icon-fenlei"></i>教学笔录
+                        </div>
+                    </li>
+                    <li class="one wow bounceInLeft" data-wow-delay="0.2s">
+                        <!-- 左侧图片区域 -->
+                        <div class="blog_img">
+                            <img src="https://img1.baidu.com/it/u=1953131264,2742788103&fm=26&fmt=auto&gp=0.jpg" alt="">
+                        </div>
+                        <!-- 右侧内容 -->
+                        <div class="blog_content">
+                            <h2>高考加油</h2>
+                            <p>欢迎各位有志同学报考黄淮学院,黄淮学院创办于2004年，位于河南省驻马店市开源大道，现设有经济与管理、文化传媒、数学与统计、建筑工程等17个二级学院和50个本科专业，涵盖理、工、管理、经济、教育、艺术。
+                                <i class="iconfont icon-iconfontzhizuobiaozhun47"></i>
+                                <a
+                                    href="https://www.baidu.com/link?url=QiPvg3mHK46paMQIWq0TpmhXSvGgGFAD1FaWxjZVPKEi_EeACo-34qyJcXcDRBa8_eiRyX6veOiTvrzxgZ4fxD8Vj-5kTSeuPXBX-cmrUxc8Cl7PHZ7xLLOUrdic2vnU&wd=&eqid=dbb5f1d6000e2d290000000360d6f322">阅读全文</a>
+                            </p>
+                        </div>
+                        <!-- 底部右下角细节描述 -->
+                        <div class="blog_about">
+                            <i class="iconfont icon-zhongbiao"></i>2021-6-27
+                            <i class="iconfont icon-yanjing-"></i>88888
+                            <i class="iconfont  icon-fenlei"></i>教学笔录
+                        </div>
+                    </li>
+                    <li class="one wow bounceInLeft" data-wow-delay="0.3s">
+                        <!-- 左侧图片区域 -->
+                        <div class="blog_img">
+                            <img src="https://img1.baidu.com/it/u=1953131264,2742788103&fm=26&fmt=auto&gp=0.jpg" alt="">
+                        </div>
+                        <!-- 右侧内容 -->
+                        <div class="blog_content">
+                            <h2>高考加油</h2>
+                            <p>欢迎各位有志同学报考黄淮学院,黄淮学院创办于2004年，位于河南省驻马店市开源大道，现设有经济与管理、文化传媒、数学与统计、建筑工程等17个二级学院和50个本科专业，涵盖理、工、管理、经济、教育、艺术。
+                                <i class="iconfont icon-iconfontzhizuobiaozhun47"></i>
+                                <a
+                                    href="https://www.baidu.com/link?url=QiPvg3mHK46paMQIWq0TpmhXSvGgGFAD1FaWxjZVPKEi_EeACo-34qyJcXcDRBa8_eiRyX6veOiTvrzxgZ4fxD8Vj-5kTSeuPXBX-cmrUxc8Cl7PHZ7xLLOUrdic2vnU&wd=&eqid=dbb5f1d6000e2d290000000360d6f322">阅读全文</a>
+                            </p>
+                        </div>
+                        <!-- 底部右下角细节描述 -->
+                        <div class="blog_about">
+                            <i class="iconfont icon-zhongbiao"></i>2021-6-27
+                            <i class="iconfont icon-yanjing-"></i>88888
+                            <i class="iconfont  icon-fenlei"></i>教学笔录
+                        </div>
+                    </li>
+                    <li class="one wow bounceInLeft" data-wow-delay="0.4s">
+                        <!-- 左侧图片区域 -->
+                        <div class="blog_img">
+                            <img src="https://img1.baidu.com/it/u=1953131264,2742788103&fm=26&fmt=auto&gp=0.jpg" alt="">
+                        </div>
+                        <!-- 右侧内容 -->
+                        <div class="blog_content">
+                            <h2>高考加油</h2>
+                            <p>欢迎各位有志同学报考黄淮学院,黄淮学院创办于2004年，位于河南省驻马店市开源大道，现设有经济与管理、文化传媒、数学与统计、建筑工程等17个二级学院和50个本科专业，涵盖理、工、管理、经济、教育、艺术。
+                                <i class="iconfont icon-iconfontzhizuobiaozhun47"></i>
+                                <a
+                                    href="https://www.baidu.com/link?url=QiPvg3mHK46paMQIWq0TpmhXSvGgGFAD1FaWxjZVPKEi_EeACo-34qyJcXcDRBa8_eiRyX6veOiTvrzxgZ4fxD8Vj-5kTSeuPXBX-cmrUxc8Cl7PHZ7xLLOUrdic2vnU&wd=&eqid=dbb5f1d6000e2d290000000360d6f322">阅读全文</a>
+                            </p>
+                        </div>
+                        <!-- 底部右下角细节描述 -->
+                        <div class="blog_about">
+                            <i class="iconfont icon-zhongbiao"></i>2021-6-27
+                            <i class="iconfont icon-yanjing-"></i>88888
+                            <i class="iconfont  icon-fenlei"></i>教学笔录
+                        </div>
+                    </li>
+                    <li class="one wow bounceInLeft" data-wow-delay="0.5s">
+                        <!-- 左侧图片区域 -->
+                        <div class="blog_img">
+                            <img src="https://img1.baidu.com/it/u=1953131264,2742788103&fm=26&fmt=auto&gp=0.jpg" alt="">
+                        </div>
+                        <!-- 右侧内容 -->
+                        <div class="blog_content">
+                            <h2>高考加油</h2>
+                            <p>欢迎各位有志同学报考黄淮学院,黄淮学院创办于2004年，位于河南省驻马店市开源大道，现设有经济与管理、文化传媒、数学与统计、建筑工程等17个二级学院和50个本科专业，涵盖理、工、管理、经济、教育、艺术。
+                                <i class="iconfont icon-iconfontzhizuobiaozhun47"></i>
+                                <a
+                                    href="https://www.baidu.com/link?url=QiPvg3mHK46paMQIWq0TpmhXSvGgGFAD1FaWxjZVPKEi_EeACo-34qyJcXcDRBa8_eiRyX6veOiTvrzxgZ4fxD8Vj-5kTSeuPXBX-cmrUxc8Cl7PHZ7xLLOUrdic2vnU&wd=&eqid=dbb5f1d6000e2d290000000360d6f322">阅读全文</a>
+                            </p>
+                        </div>
+                        <!-- 底部右下角细节描述 -->
+                        <div class="blog_about">
+                            <i class="iconfont icon-zhongbiao"></i>2021-6-27
+                            <i class="iconfont icon-yanjing-"></i>88888
+                            <i class="iconfont  icon-fenlei"></i>教学笔录
+                        </div>
+                    </li>
+                    <li class="one wow bounceInLeft" data-wow-delay="0.6s">
+                        <!-- 左侧图片区域 -->
+                        <div class="blog_img">
+                            <img src="https://img1.baidu.com/it/u=1953131264,2742788103&fm=26&fmt=auto&gp=0.jpg" alt="">
+                        </div>
+                        <!-- 右侧内容 -->
+                        <div class="blog_content">
+                            <h2>高考加油</h2>
+                            <p>欢迎各位有志同学报考黄淮学院,黄淮学院创办于2004年，位于河南省驻马店市开源大道，现设有经济与管理、文化传媒、数学与统计、建筑工程等17个二级学院和50个本科专业，涵盖理、工、管理、经济、教育、艺术。
+                                <i class="iconfont icon-iconfontzhizuobiaozhun47"></i>
+                                <a
+                                    href="https://www.baidu.com/link?url=QiPvg3mHK46paMQIWq0TpmhXSvGgGFAD1FaWxjZVPKEi_EeACo-34qyJcXcDRBa8_eiRyX6veOiTvrzxgZ4fxD8Vj-5kTSeuPXBX-cmrUxc8Cl7PHZ7xLLOUrdic2vnU&wd=&eqid=dbb5f1d6000e2d290000000360d6f322">阅读全文</a>
+                            </p>
+                        </div>
+                        <!-- 底部右下角细节描述 -->
+                        <div class="blog_about">
+                            <i class="iconfont icon-zhongbiao"></i>2021-6-27
+                            <i class="iconfont icon-yanjing-"></i>88888
+                            <i class="iconfont  icon-fenlei"></i>教学笔录
+                        </div>
+                    </li>
+                    <li class="one wow bounceInLeft" data-wow-delay="0.6s">
+                        <!-- 左侧图片区域 -->
+                        <div class="blog_img">
+                            <img src="https://img1.baidu.com/it/u=1953131264,2742788103&fm=26&fmt=auto&gp=0.jpg" alt="">
+                        </div>
+                        <!-- 右侧内容 -->
+                        <div class="blog_content">
+                            <h2>高考加油</h2>
+                            <p>欢迎各位有志同学报考黄淮学院,黄淮学院创办于2004年，位于河南省驻马店市开源大道，现设有经济与管理、文化传媒、数学与统计、建筑工程等17个二级学院和50个本科专业，涵盖理、工、管理、经济、教育、艺术。
+                                <i class="iconfont icon-iconfontzhizuobiaozhun47"></i>
+                                <a
+                                    href="https://www.baidu.com/link?url=QiPvg3mHK46paMQIWq0TpmhXSvGgGFAD1FaWxjZVPKEi_EeACo-34qyJcXcDRBa8_eiRyX6veOiTvrzxgZ4fxD8Vj-5kTSeuPXBX-cmrUxc8Cl7PHZ7xLLOUrdic2vnU&wd=&eqid=dbb5f1d6000e2d290000000360d6f322">阅读全文</a>
+                            </p>
+                        </div>
+                        <!-- 底部右下角细节描述 -->
+                        <div class="blog_about">
+                            <i class="iconfont icon-zhongbiao"></i>2021-6-27
+                            <i class="iconfont icon-yanjing-"></i>88888
+                            <i class="iconfont  icon-fenlei"></i>教学笔录
+                        </div>
+                    </li>
+                    <li class="one wow bounceInLeft" data-wow-delay="0.6s">
+                        <!-- 左侧图片区域 -->
+                        <div class="blog_img">
+                            <img src="https://img1.baidu.com/it/u=1953131264,2742788103&fm=26&fmt=auto&gp=0.jpg" alt="">
+                        </div>
+                        <!-- 右侧内容 -->
+                        <div class="blog_content">
+                            <h2>高考加油</h2>
+                            <p>欢迎各位有志同学报考黄淮学院,黄淮学院创办于2004年，位于河南省驻马店市开源大道，现设有经济与管理、文化传媒、数学与统计、建筑工程等17个二级学院和50个本科专业，涵盖理、工、管理、经济、教育、艺术。
+                                <i class="iconfont icon-iconfontzhizuobiaozhun47"></i>
+                                <a
+                                    href="https://www.baidu.com/link?url=QiPvg3mHK46paMQIWq0TpmhXSvGgGFAD1FaWxjZVPKEi_EeACo-34qyJcXcDRBa8_eiRyX6veOiTvrzxgZ4fxD8Vj-5kTSeuPXBX-cmrUxc8Cl7PHZ7xLLOUrdic2vnU&wd=&eqid=dbb5f1d6000e2d290000000360d6f322">阅读全文</a>
+                            </p>
+                        </div>
+                        <!-- 底部右下角细节描述 -->
+                        <div class="blog_about">
+                            <i class="iconfont icon-zhongbiao"></i>2021-6-27
+                            <i class="iconfont icon-yanjing-"></i>88888
+                            <i class="iconfont  icon-fenlei"></i>教学笔录
+                        </div>
+                    </li>
+                    <li class="one wow bounceInLeft" data-wow-delay="0.6s">
+                        <!-- 左侧图片区域 -->
+                        <div class="blog_img">
+                            <img src="https://img1.baidu.com/it/u=1953131264,2742788103&fm=26&fmt=auto&gp=0.jpg" alt="">
+                        </div>
+                        <!-- 右侧内容 -->
+                        <div class="blog_content">
+                            <h2>高考加油</h2>
+                            <p>欢迎各位有志同学报考黄淮学院,黄淮学院创办于2004年，位于河南省驻马店市开源大道，现设有经济与管理、文化传媒、数学与统计、建筑工程等17个二级学院和50个本科专业，涵盖理、工、管理、经济、教育、艺术。
+                                <i class="iconfont icon-iconfontzhizuobiaozhun47"></i>
+                                <a
+                                    href="https://www.baidu.com/link?url=QiPvg3mHK46paMQIWq0TpmhXSvGgGFAD1FaWxjZVPKEi_EeACo-34qyJcXcDRBa8_eiRyX6veOiTvrzxgZ4fxD8Vj-5kTSeuPXBX-cmrUxc8Cl7PHZ7xLLOUrdic2vnU&wd=&eqid=dbb5f1d6000e2d290000000360d6f322">阅读全文</a>
+                            </p>
+                        </div>
+                        <!-- 底部右下角细节描述 -->
+                        <div class="blog_about">
+                            <i class="iconfont icon-zhongbiao"></i>2021-6-27
+                            <i class="iconfont icon-yanjing-"></i>88888
+                            <i class="iconfont  icon-fenlei"></i>教学笔录
+                        </div>
+                    </li>
+                    <li class="one wow bounceInLeft" data-wow-delay="0.6s">
+                        <!-- 左侧图片区域 -->
+                        <div class="blog_img">
+                            <img src="https://img1.baidu.com/it/u=1953131264,2742788103&fm=26&fmt=auto&gp=0.jpg" alt="">
+                        </div>
+                        <!-- 右侧内容 -->
+                        <div class="blog_content">
+                            <h2>高考加油</h2>
+                            <p>欢迎各位有志同学报考黄淮学院,黄淮学院创办于2004年，位于河南省驻马店市开源大道，现设有经济与管理、文化传媒、数学与统计、建筑工程等17个二级学院和50个本科专业，涵盖理、工、管理、经济、教育、艺术。
+                                <i class="iconfont icon-iconfontzhizuobiaozhun47"></i>
+                                <a
+                                    href="https://www.baidu.com/link?url=QiPvg3mHK46paMQIWq0TpmhXSvGgGFAD1FaWxjZVPKEi_EeACo-34qyJcXcDRBa8_eiRyX6veOiTvrzxgZ4fxD8Vj-5kTSeuPXBX-cmrUxc8Cl7PHZ7xLLOUrdic2vnU&wd=&eqid=dbb5f1d6000e2d290000000360d6f322">阅读全文</a>
+                            </p>
+                        </div>
+                        <!-- 底部右下角细节描述 -->
+                        <div class="blog_about">
+                            <i class="iconfont icon-zhongbiao"></i>2021-6-27
+                            <i class="iconfont icon-yanjing-"></i>88888
+                            <i class="iconfont  icon-fenlei"></i>教学笔录
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 右侧侧栏列表 -->
+        <div class="slide_list">
+            <!-- 右侧分类列表 -->
+            <div class="classify_list">
+                <!-- 顶部标题区域 -->
+                <div class="blog_list_title">
+                    <i class="iconfont icon-ai-list"></i>
+                    <span>分类列表</span>
+                    <span>Classify list</span>
+                </div>
+                <!-- 底部列表 -->
+                <div class="classify_list_wrapper">
+                    <ul>
+                        <li class="one wow bounceInDown" data-wow-delay="0.1s"><a href="#">前端(45)</a></li>
+                        <li class="one wow bounceInDown" data-wow-delay="0.1s"><a href="#">UI(5)</a></li>
+                        <li class="one wow bounceInDown" data-wow-delay="0.1s"><a href="#">Bootstrap(2)</a></li>
+                        <li class="one wow bounceInLeft" data-wow-delay="0.1s"><a href="#">linux(5)</a></li>
+                        <li class="one wow slideInRight" data-wow-delay="0.1s"><a href="#">后端(17)</a></li>
+                        <li class="one wow slideInRight" data-wow-delay="0.1s"><a href="#">教学笔录(43)</a></li>
+                        <li class="one wow bounceInLeft" data-wow-delay="0.1s"><a href="#">JQuery(14)</a></li>
+                        <li class="one wow slideInRight" data-wow-delay="0.1s"><a href="#">css(33)</a></li>
+                        <li class="one wow slideInRight" data-wow-delay="0.1s"><a href="#">python(2)</a></li>
+                        <li class="one wow bounceInLeft" data-wow-delay="0.1s"><a href="#">数据库(6)</a></li>
+                        <li class="one wow slideInRight" data-wow-delay="0.1s"><a href="#">常见特效(29)</a></li>
+                        <li class="one wow slideInRight" data-wow-delay="0.1s"><a href="#">js (15)</a></li>
+                        <li class="one wow bounceInLeft" data-wow-delay="0.1s"><a href="#">canvas(7)</a></li>
+                        <li class="one wow bounceInLeft" data-wow-delay="0.1s"><a href="#">生活与文章(5)</a></li>
+                        <li class="one wow bounceInLeft" data-wow-delay="0.1s"><a href="#">移动开发(5)</a></li>
+                        <li class="one wow slideInRight" data-wow-delay="0.1s"><a href="#">兼容(4)</a></li>
+                        <li class="one wow slideInRight" data-wow-delay="0.1s"><a href="#">前端插件(16)</a></li>
+                        <li class="one wow bounceInUp" data-wow-delay="0.1s"><a href="#">PHP(33)</a></li>
+                        <li class="one wow bounceInUp" data-wow-delay="0.1s"><a href="#">代码编辑器(4)</a></li>
+                        <li class="one wow bounceInUp" data-wow-delay="0.1s"><a href="#">面试(3)</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 推荐生活与文章 -->
+            <div class="life_article_wrapper">
+                <!-- 上列表 -->
+                <div class="blog_list_title">
+                    <i class="iconfont icon-tubiao302"></i>
+                    <span>推荐生活与文章</span>
+                    <span> Groom List</span>
+                </div>
+                <!-- 下列表 -->
+                <div class="life_article_list">
+                    <!-- 上描述性标题 -->
+                    <div class="life_article_title">
+                        <p>缩略图</p>
+                        <p>描述</p>
+                    </div>
+                    <!-- 下具体文章列表 -->
+                    <ul>
+                        <li class=" wow bounceInRight" data-wow-delay="0.1s">
+                            <!-- 文章左侧缩略图 -->
+                            <div class="left_img">
+                                <img src="https://img0.baidu.com/it/u=3138029519,888219976&fm=26&fmt=auto&gp=0.jpg"
+                                    alt="">
+                                <!-- 蒙版 -->
+                                <div class="article_mask">
+                                    <a href="#">阅读全文</a>
+                                </div>
+                            </div>
+                            <!--  文章右侧标题和描述 -->
+                            <div class="right_desc">
+                                <h2>如何打胜仗</h2>
+                                <p>
+                                    战争是综合的
+                                    不是单靠某一项能成功的,古语说天时地利人和具备是胜仗的基础,知己知彼方能百战不殆
+                                </p>
+                            </div>
+                        </li>
+                        <li class="wow bounceInRight" data-wow-delay="0.1s">
+                            <!-- 文章左侧缩略图 -->
+                            <div class="left_img">
+                                <img src="https://img0.baidu.com/it/u=3138029519,888219976&fm=26&fmt=auto&gp=0.jpg"
+                                    alt="">
+                                <!-- 蒙版 -->
+                                <div class="article_mask">
+                                    <a href="#">阅读全文</a>
+                                </div>
+                            </div>
+                            <!--  文章右侧标题和描述 -->
+                            <div class="right_desc">
+                                <h2>如何打胜仗</h2>
+                                <p>
+                                    战争是综合的
+                                    不是单靠某一项能成功的,古语说天时地利人和具备是胜仗的基础,知己知彼方能百战不殆
+                                </p>
+                            </div>
+                        </li>
+                        <li class="wow bounceInRight" data-wow-delay="0.1s">
+                            <!-- 文章左侧缩略图 -->
+                            <div class="left_img">
+                                <img src="https://img0.baidu.com/it/u=3138029519,888219976&fm=26&fmt=auto&gp=0.jpg"
+                                    alt="">
+                                <!-- 蒙版 -->
+                                <div class="article_mask">
+                                    <a href="#">阅读全文</a>
+                                </div>
+                            </div>
+                            <!--  文章右侧标题和描述 -->
+                            <div class="right_desc">
+                                <h2>如何打胜仗</h2>
+                                <p>
+                                    战争是综合的
+                                    不是单靠某一项能成功的,古语说天时地利人和具备是胜仗的基础,知己知彼方能百战不殆
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 休闲链接 -->
+            <div class="disport_link">
+                <!-- 参考分类列表编写 上下布局 -->
+                <!-- 顶部标题区域 -->
+                <div class="blog_list_title">
+                    <i class="iconfont icon-xiuxian"></i>
+                    <span>休闲链接</span>
+                    <span>Disport link</span>
+                </div>
+                <!-- 底部列表 -->
+                <div id="disport_link_wrapper" class="classify_list_wrapper">
+                    <ul>
+                        <li><a href="#">快递查询</a></li>
+                        <li><a href="#">网易云音乐</a></li>
+                        <li><a href="#">在线音乐外链</a></li>
+                        <li><a href="#">中国好声音</a></li>
+                        <li><a href="#">创意图片</a></li>
+                        <li><a href="#">火影忍者</a></li>
+                        <li><a href="#">新视觉影院</a></li>
+                        <li><a href="#">向往生活综艺第一季</a></li>
+                        <li><a href="#">ppt免费模板</a></li>
+                        <li><a href="#">红黑联盟</a></li>
+                        <li><a href="#">黑客论坛</a></li>
+                        <li><a href="#">前端开发</a></li>
+                        <li><a href="#">老烟斗鬼故事</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <!-- 网站概况 -->
+            <div class="websit_link">
+                <!-- 参考分类列表编写 上下布局 -->
+                <!-- 顶部标题区域 -->
+                <div class="blog_list_title">
+                    <i class="iconfont icon-wangzhan"></i>
+                    <span>网站概况</span>
+                    <span>Web site profile</span>
+                </div>
+                <!-- 底部列表 -->
+                <div id="websit_link_wrapper" class="classify_list_wrapper">
+                    <ul>
+                        <li>
+                            <i class="iconfont icon-ai-list"></i>
+                            <span>网页概况</span>
+                            <span>93篇</span>
+                        </li>
+                        <li>
+                            <i class="iconfont icon-yanjing-"></i>
+                            <span>浏览总量</span>
+                            <span>2934次</span>
+                        </li>
+                        <li>
+                            <i class="iconfont icon-ai-list"></i>
+                            <span>文章总数</span>
+                            <span>293篇</span>
+                        </li>
+                        <li>
+                            <i class="iconfont icon-ai-list"></i>
+                            <span>网页链接</span>
+                            <span>193篇</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 换肤和返回顶部-->
+    <div class="skin_top">
+        <!-- 换肤 -->
+        <div class="skin">
+            <i class="iconfont icon-liuyan"></i>
+        </div>
+        <!-- 返回顶部 -->
+        <div class="to_top">
+            <i class="iconfont icon-icon-"></i>
+        </div>
+    </div>
+    <!-- 网站底部 -->
+    <div class="footer">
+        <p>CopyRight &copy; 2021-2022 小宋博客 Design by xiaomi</p>
+        <p>豫ICP175684923</p>
+    </div>
+    <!-- Swiper脚本 -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            autoplay: 3000, //开启自动切换，且每隔3000ms切换一次
+            // direction : 'vertical',  //可设置水平(horizontal)或垂直(vertical)。
+            speed: 1000, //控制切换速度
+            freeMode: true, //开启丝滑模式，true是开启 false为关闭（接触反弹-默认值）
+            loop: true, //开启循环模式
+            effect: 'coverflow',
+            slidesPerView: 1,
+            // 前进后退按钮
+            prevButton: '.swiper-button-prev',
+            nextButton: '.swiper-button-next',
+            // <!-- 焦点分页器 -->
+            pagination: '.swiper-pagination',
+            paginationType: 'fraction', //分页器样式---bullets圆点默认 ，fraction分式，progress进度条，'custom'自定义
+        });
+    </script>
+    <!-- 引入jQuery库 -->
+    <script src="./libs/jquery-3.6.0.js"></script>
+    <script>
+        //  脚本剧本需要页面加载完成后，给元素绑定事件（演员就位）-----页面加载完毕函数
+        $(function () {
+            /*给站长微信添加点击事件 
+              1.选中元素$('选择器')
+              2.通过on('click',function() {}) 进行事件绑定 
+              3.function的{}里编写具体的操作
+
+            */
+            $('#weixin').on('click', function () {
+                /* 
+                   显示show fadeIN淡入 slideDown下滑展示
+                   隐藏hide,淡出fadeOut slideUp上滑隐藏
+                 */
+                $('.mask_wrapper').fadeIn();
+                //  $('.mask_wrapper').slideDown();
+            })
+            $('#btn').on('click', function () {
+
+                $('.mask_wrapper').slideUp();
+            })
+
+            /* // 换肤操作 */
+            $('.skin').on('click', function () {
+                $('body').css('background-image', 'url("imgs/2.jpg")');  /* 切换本地背景 */
+            })
+            /* 返回顶部 */
+            $('.to_top').on('click', function () {
+                $('html,body').animate({
+                    'scrollTop': '0px'   ///600px 抵达博客列表位置
+                }, 200)
+            })
+
+        })
+    </script>
+    <!-- 引入wow.js -->
+    <script src="./libs/wow.min.js"></script>
+    <!-- wow.js初始化 -->
+    <script>
+        // 初始化
+        new WOW().init();
+    </script>
+</body>
+
+</html>

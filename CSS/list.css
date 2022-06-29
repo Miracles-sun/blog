@@ -1,0 +1,63 @@
+/* 具体博客内容 */
+.blog_list_info h1 {
+    text-align: center;
+}
+.indo_title {
+    text-align: center;
+}
+.indo_title span {
+    padding-right: 10px;
+}
+.indo_title {
+    margin-top: 10px;
+}
+.blog_list_info p{
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: left;
+    text-indent: 2em;
+}
+/* 点赞爆炸 */
+.demo {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #eeaaaa;
+    border-radius: 50%;
+    margin: 100px auto;
+    /* 背景图 */
+    background:url('../imgs/heart.png');
+    background-repeat: no-repeat;
+    /* 背景图不重复 */
+    background-size: 2900%;
+    /* 背景图大小 */
+    background-position: left;
+    /* 背景图定位-默认定位左侧 */
+    line-height: 300px;
+    /* 行高设置垂直方向对其方式 */
+    text-align: center;
+    /* 水平方向对其方式 */
+     /* 溢出隐藏 */
+     overflow: hidden;
+}
+/* 1.定义动画 */
+@keyframes sport {
+    from {
+        background-position: left;
+    }
+
+    to {
+        background-position: right;
+    }
+}
+
+/* 爆炸爱心类名 */
+.bz {
+    /* 2.调用动画  动画名 时长 帧数 动画结束后保持在最后一帧的状态*/
+    animation: sport 0.8s steps(28) forwards;
+}
+/* 箭头 */
+.arrow ul li{
+    width: 200px;
+    height: 30px;
+    padding: 5px 10px;
+}
